@@ -13,7 +13,7 @@ class User(AbstractUser):
     """Default user for djangogram."""
 
     #: First and last name do not cover name patterns around the globe
-    name = models.CharField(_("Name of User"), blank=True, max_length=255)
+    name = models.CharField(("Name of User"), blank=True, max_length=255)
     user_name = models.CharField( blank=True, max_length=255)
     profile_photo = models.ImageField(blank = True)
     website = models.URLField(blank = True)
